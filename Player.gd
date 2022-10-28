@@ -1,18 +1,22 @@
 extends KinematicBody
 
-var run_speed : float = -8.0
-
+var run_speed : float
+var sidestep_speed : float = 5.0
+var velocity := Vector3()
+var gravity : float
+var jump_speed : float
 var time : float = 0.0 #kuinka usein
 var step_freq : float = 2.0 #kuinka usein
 var step_height : float = 0.2 #kuinka korkealle tää hahmo hyppy
 var step_tilt : float = 8.0 #asteita
 
+
 onready var body_hinge = $Spatial # $ = kutsuu nodeen
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
+func setup_jump(length : float, height : float, speed : float):
+	run_speed = speed
+	gravity = 8.0 * height * speed * speed / (length * length)
+	jump_speed = 4.0 * height * speed / length
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
@@ -22,6 +26,23 @@ func _physics_process(delta):
 	body_hinge.translation.y = step_height * (1 + sin(2.0 * PI * step_freq * time))
 	body_hinge.rotation_degrees.z = step_tilt * sin(PI * step_freq * time)
 	time += delta
-	move_and_slide(Vector3( 0, 0, run_speed))
+	var sideways : float = 0.0
+	if Input.is_action_pressed("move_right"):
+		sideways += 1.0
+	if Input.is_action_pressed("move_left"):
+		sideways -= 1.0
+	velocity.x = sideways * sidestep_speed
+	
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = jump_speed
+		
+	velocity.y -= gravity * delta
+	
+	
+	velocity.z = -run_speed
+	velocity = move_and_slide(velocity, Vector3.UP)
+
+
+
 func _on_RoadStart_gameplay_exited():
-	pass # Replace with function body.
+	pass

@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://roadbase.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Humvee.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://Assets/lowpolytree.obj" type="ArrayMesh" id=3]
 
 [sub_resource type="SpatialMaterial" id=1]
@@ -108,7 +107,3 @@ material/0 = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.23088, 3.34635, -15.1404 )
 mesh = ExtResource( 3 )
 material/0 = SubResource( 1 )
-
-[node name="Humvee" type="MeshInstance" parent="." index="21"]
-transform = Transform( 0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.226552, 1.12895, -35.1318 )
-mesh = ExtResource( 2 )
