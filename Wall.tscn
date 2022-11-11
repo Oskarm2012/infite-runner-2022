@@ -92,6 +92,7 @@ material/18 = SubResource( 19 )
 material/19 = SubResource( 20 )
 
 [node name="StaticBody" type="StaticBody" parent="wall"]
+collision_layer = 4
 
 [node name="CollisionShape" type="CollisionShape" parent="wall/StaticBody"]
 shape = SubResource( 21 )

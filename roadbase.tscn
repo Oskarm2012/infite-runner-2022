@@ -52,6 +52,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 3, 0 )
 shape = SubResource( 7 )
 
 [node name="StaticBody" type="StaticBody" parent="Grass/Tie"]
+collision_layer = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Grass/Tie/StaticBody"]
 shape = SubResource( 8 )

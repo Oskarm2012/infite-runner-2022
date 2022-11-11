@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://roadbase.tscn" type="PackedScene" id=2]
+
+[node name="Road2" instance=ExtResource( 2 )]
+
+[node name="wall" parent="." index="1" instance=ExtResource( 1 )]
+transform = Transform( 0.5, 0.000244346, 0, -0.000244346, 0.5, 0, 0, 0, 0.5, 1.74979, 0.600002, -32.437 )
+
+[node name="wall2" parent="." index="2" instance=ExtResource( 1 )]
+transform = Transform( 0.5, 0.000244346, 0, -0.000244346, 0.5, 0, 0, 0, 0.5, -2.13626, -0.516509, -31.5648 )
+
+[node name="wall3" parent="." index="3" instance=ExtResource( 1 )]
+transform = Transform( 0.5, 0.000244346, 0, -0.000244346, 0.5, 0, 0, 0, 0.5, -1.9144, 0.734567, -25.0744 )
+
+[node name="wall4" parent="." index="4" instance=ExtResource( 1 )]
+transform = Transform( 0.5, 0.000244346, 0, -0.000244346, 0.5, 0, 0, 0, 0.5, 1.84954, 1.32583, -27.5631 )
+
+[node name="wall5" parent="." index="5" instance=ExtResource( 1 )]
+transform = Transform( 0.5, 0.000244346, 0, -0.000244346, 0.5, 0, 0, 0, 0.5, -0.249398, 0.734567, -21.5227 )
+
+[node name="wall6" parent="." index="6" instance=ExtResource( 1 )]
+transform = Transform( 0.499748, -0.0158624, 0, 0.0158588, 0.499637, -0.0105759, 0.000335518, 0.0105706, 0.499888, -0.249398, 1.78317, -15.4297 )
