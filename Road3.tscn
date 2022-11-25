@@ -6,16 +6,16 @@
 [node name="roadbase" instance=ExtResource( 2 )]
 
 [node name="wall" parent="." index="1" instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, -1.87725, 0.6, -33.592 )
+transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, -1.87725, 0.6, -26.4039 )
 
 [node name="wall2" parent="." index="2" instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, 2.60925, 0.6, -33.592 )
+transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, 2.60925, 0.6, -27.231 )
 
 [node name="wall3" parent="." index="3" instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, 2.60925, 0.6, -27.5405 )
+transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, 2.60925, 0.6, -11.114 )
 
 [node name="wall4" parent="." index="4" instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, -2.12705, 0.6, -27.5405 )
+transform = Transform( 0.5, 0, 0, 0, 4, 0, 0, 0, 0.5, -2.12705, 0.6, -10.9289 )
 
 [node name="wall5" parent="." index="5" instance=ExtResource( 1 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.129303, 0.666833, -22.374 )
@@ -39,10 +39,10 @@ transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.6287, 0.6, -41.9589 )
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.61113, 0.6, -41.9589 )
 
 [node name="wall11" parent="." index="12" instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.156055, 0.6, -43.8236 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.156055, 0.6, -42.5501 )
 
 [node name="wall12" parent="." index="13" instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.35477, 0.6, -43.8236 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -2.35477, 0.6, -42.6045 )
 
 [node name="wall13" parent="." index="14" instance=ExtResource( 1 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.37503, 0.6, -43.8236 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.37503, 0.6, -42.6792 )
