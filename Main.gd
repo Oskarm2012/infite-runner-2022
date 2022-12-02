@@ -17,6 +17,7 @@ var road_scenes = [
 ]
 func _ready():
 	randomize()
+	get_tree().paused = true
 	player.setup_jump(jump_length, jump_height, run_speed)
 	
 	for i in range(initial_road_count):
